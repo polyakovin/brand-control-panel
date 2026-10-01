@@ -8,7 +8,6 @@
 @media print{.header,.footer,.toc,.detail-aside,.mobile-toc,.inline-cta,.skip,.copy-button{display:none}.wrap{width:100%}.article-layout,.detail-grid{display:block}.article-banner{height:180px}.article-body h1,.entry-body h1{font-size:36px}.article-body section>p{font-size:12pt}a{text-decoration:underline}}
 
 /* Real clips remain readable and linked without scripts or third-party embeds. */
-.technique-videos{position:relative;z-index:1;align-self:flex-start;color:var(--accent);font-size:11px;line-height:1.5;text-decoration:underline;text-underline-offset:3px;padding:6px 0;margin:-12px 0 18px}
 .video-list{display:grid;gap:18px;margin-top:25px;min-width:0}
 .video-card{border:1px solid var(--line);border-radius:7px;background:#fbfaf6;padding:25px;min-width:0;overflow-wrap:anywhere}
 .video-meta{display:flex;flex-wrap:wrap;gap:9px 14px;align-items:center;font-size:10px;line-height:1.5;margin-bottom:15px;color:var(--accent)}

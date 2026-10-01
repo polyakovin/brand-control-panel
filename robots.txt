@@ -1,0 +1,4 @@
+# Project Pages serves this under a subpath; only /robots.txt at the host root controls crawling.
+User-agent: *
+Allow: /
+Sitemap: https://polyakovin.github.io/brand-control-panel/sitemap.xml

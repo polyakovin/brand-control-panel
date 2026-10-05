@@ -24,3 +24,20 @@
 .entry-body section>p.video-intro{font-size:13px;line-height:1.8;color:var(--muted)}
 .entry-body section>p.video-note{font-size:11px;line-height:1.8;color:var(--muted);margin-top:20px}
 @media(max-width:600px){.video-card{padding:21px 18px}.video-card h3{font-size:22px}.video-analysis{font-size:14px}.video-evidence strong{font-size:16px}.video-meta{font-size:10px}.entry-body section>p.video-intro{font-size:12px}}
+:root .hook-collection{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 26px;margin-bottom:28px;border:1px solid var(--line);border-radius:6px;background:#eeefe7}
+.hook-collection .eyebrow{margin:0 0 8px}
+.hook-collection p:not(.eyebrow){margin:0;font-size:15px;line-height:1.6}
+.hook-collection>.text-link{flex-shrink:0;min-height:44px;display:flex;align-items:center}
+.hook-patterns{list-style:none;padding:0;margin:32px 0;display:grid;gap:32px}
+.hook-pattern{min-width:0;padding-bottom:24px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.hook-pattern>.eyebrow{margin-bottom:12px}
+.hook-pattern>.eyebrow a{text-decoration:underline;text-underline-offset:4px}
+.hook-pattern .formula-box{padding:20px 24px}
+.hook-pattern .formula-box>div{margin-bottom:0;align-items:flex-start}
+.hook-pattern .formula-box h3{font-family:var(--serif);font-size:24px;line-height:1.45;font-weight:400;margin:0}
+.hook-pattern .copy-button{flex-shrink:0;min-height:44px}
+.article-body .hook-original{font-size:13px;line-height:1.6;color:var(--muted);margin:12px 0 20px}
+.hook-original>span:first-child{font-weight:600}
+.hook-pattern blockquote{font-size:22px;margin-top:10px}
+.article-body .hook-technique{font-size:13px;margin:20px 0 0}
+@media(max-width:640px){.hook-collection{align-items:flex-start;flex-direction:column;gap:12px;padding:20px}.hook-pattern .formula-box{padding:18px}.hook-pattern .formula-box>div{flex-direction:column;gap:8px}.hook-pattern .formula-box h3{font-size:22px}.hook-pattern blockquote{font-size:21px}}

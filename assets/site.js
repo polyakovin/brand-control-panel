@@ -4,6 +4,7 @@ if (filterPanel) {
   const goal = document.querySelector('#catalog-goal');
   const buttons = [...document.querySelectorAll('[data-filter]')];
   const cards = [...document.querySelectorAll('[data-entry]')];
+  const formatGuide = document.querySelector('[data-format-guide]');
   const empty = document.querySelector('#catalog-empty');
   const count = document.querySelector('#catalog-count');
   const normalize = value => value.toLocaleLowerCase('ru').replaceAll('ё', 'е').trim();
@@ -18,6 +19,7 @@ if (filterPanel) {
       if (visible) total++;
     }
     buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === type)));
+    if (formatGuide) formatGuide.hidden = !['all', 'format'].includes(type);
     count.textContent = `Показано: ${total} из ${cards.length}`;
     empty.hidden = total > 0;
   }

@@ -1,0 +1,8 @@
+.desktop-downloads{margin-top:24px;min-width:0}
+.download-version{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 12px}
+.download-actions{display:flex;flex-wrap:wrap;gap:10px}
+.download-actions .button{font-size:12px;padding:15px 18px;gap:14px;max-width:100%;min-height:44px;white-space:normal}
+.download-details,.download-signing{font-size:11px;line-height:1.7;color:var(--muted);margin:12px 0 0;max-width:440px}
+.download-details a{text-decoration:underline;text-underline-offset:3px}
+.download-signing{margin-top:6px}
+@media(max-width:370px){.download-actions{flex-direction:column;align-items:stretch}.download-actions .button{justify-content:space-between}}

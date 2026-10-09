@@ -1,0 +1,48 @@
+/* Shared tokens load after the original editorial layout. */
+:root ::selection { background: var(--accent-surface); color: var(--ink); }
+:root .logo img { width: 38px; height: 38px; flex-shrink: 0; }
+:root .header { height: auto; min-height: 102px; padding-block: 22px; flex-wrap: wrap; }
+.header-tools { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 12px; margin-left: auto; }
+.public-theme { display: inline-flex; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.public-theme button { width: 32px; height: 32px; display: grid; place-items: center; padding: 0; background: transparent; color: var(--muted); border-radius: 5px; }
+.public-theme button:hover { background: var(--surface-hover); }
+.public-theme button[aria-pressed="true"] { background: var(--accent-surface); color: var(--accent-ink); }
+:root .header-cta { border-color: var(--line); border-radius: 7px; }
+:root .button { color: var(--primary-ink); border-radius: 8px; }
+:root .button:hover { background: var(--accent-hover); }
+:root .button.dark { background: var(--ink); color: var(--canvas); }
+:root .button.dark:hover { background: var(--muted); color: var(--canvas); }
+:root .skip { background: var(--accent); color: var(--primary-ink); }
+:root .hero-visual { background: var(--accent-surface); border-color: var(--line); }
+:root .hero-visual::before { background-image: linear-gradient(var(--focus-shadow) 1px,transparent 1px),linear-gradient(90deg,var(--focus-shadow) 1px,transparent 1px); }
+:root :is(.visual-topline, .visual-bottom p, .visual-loop, .note-kind, .index) { color: var(--muted); }
+:root .note-back { background: var(--peach); border-color: var(--line); color: var(--ink); box-shadow: 0 8px 20px #1612180c; }
+:root .note-front { background: var(--surface); border-color: var(--line); }
+:root .note-kind { border-color: var(--line); }
+:root .visual-loop img { display: block; width: 48px; height: 48px; }
+:root .category-link { border-color: var(--line); }
+:root :is(.technique-card, .video-card) { background: var(--surface); }
+:root .technique-card:hover { background: var(--surface-hover); border-color: var(--accent); }
+:root .kind.hook { background: var(--accent-surface); color: var(--accent-ink); }
+:root .kind.method { background: var(--lavender); color: var(--ink); }
+:root .kind.format { background: var(--sage); color: var(--ink); }
+:root :is(.articles-section, .checklist, .article-end, .hook-collection) { background: var(--surface-raised); }
+:root :is(.article-art, .article-art::after) { border-color: var(--line); }
+:root :is(.peach, .sage, .lavender, .sand) .motif { color: var(--accent); }
+:root :is(.search, .goal-select select) { background: var(--surface); border-color: var(--line); }
+:root .search input::placeholder { color: var(--muted); }
+:root .filter-tabs button[aria-pressed="true"] { background: var(--accent); color: var(--primary-ink); }
+:root .formula-box { background: var(--accent-surface); border-color: var(--line); }
+:root :is(.formula-box h2, .copy-status) { color: var(--accent-ink); }
+:root .large-number { color: var(--accent); opacity: .55; }
+:root .article-body section > p { color: var(--ink); }
+@media (max-width: 800px) {
+  :root .header { gap: 18px; }
+  .header-tools { gap: 8px; }
+}
+@media (max-width: 480px) {
+  :root .logo { font-size: 24px; letter-spacing: -.9px; }
+  :root .logo img { width: 32px; height: 32px; }
+  .header-tools { margin-left: 0; }
+  .public-theme button { width: 30px; height: 30px; }
+}

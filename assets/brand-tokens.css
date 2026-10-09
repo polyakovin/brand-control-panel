@@ -1,0 +1,93 @@
+/* Shared visual identity for the application and public library. */
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+  --canvas: #fbf8f4;
+  --ink: #302b2c;
+  --muted: #736764;
+  --line: #e4d8d2;
+  --surface: #fffdfb;
+  --surface-raised: #f1e8e2;
+  --surface-hover: #f7eae3;
+  --sidebar-surface: #f5eee8;
+  --accent: #bc4033;
+  --accent-hover: #a73329;
+  --accent-surface: #fbe3dc;
+  --accent-ink: #9f342a;
+  --primary-ink: #fffdfb;
+  --focus: #c14a3a;
+  --focus-shadow: #c14a3a26;
+  --warning-surface: #fbf0d9;
+  --warning-ink: #79572a;
+  --error-surface: #fce5e2;
+  --error-ink: #a53730;
+  --success-surface: #e8f0e8;
+  --success-ink: #3b6345;
+  --peach: #f6d9ce;
+  --sage: #e7e6df;
+  --lavender: #ece4ec;
+  --sand: #f0e5d3;
+  --brand-mark: #f45143;
+  --green: var(--accent);
+  --paper: var(--canvas);
+  color: var(--ink);
+  background: var(--canvas);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #1b1b20;
+  --ink: #f3e9e3;
+  --muted: #bfb0a8;
+  --line: #494044;
+  --surface: #252329;
+  --surface-raised: #302b31;
+  --surface-hover: #382c30;
+  --sidebar-surface: #201e24;
+  --accent: #ff9987;
+  --accent-hover: #ffb3a4;
+  --accent-surface: #482d2e;
+  --accent-ink: #ffc0b1;
+  --primary-ink: #321c18;
+  --focus: #ff9987;
+  --focus-shadow: #ff998733;
+  --warning-surface: #3a3024;
+  --warning-ink: #e8c695;
+  --error-surface: #41272b;
+  --error-ink: #ffb3aa;
+  --success-surface: #26352d;
+  --success-ink: #b8d8bf;
+  --peach: #4a302e;
+  --sage: #34332e;
+  --lavender: #38303e;
+  --sand: #3b332a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  color-scheme: dark;
+  --canvas: #1b1b20;
+  --ink: #f3e9e3;
+  --muted: #bfb0a8;
+  --line: #494044;
+  --surface: #252329;
+  --surface-raised: #302b31;
+  --surface-hover: #382c30;
+  --sidebar-surface: #201e24;
+  --accent: #ff9987;
+  --accent-hover: #ffb3a4;
+  --accent-surface: #482d2e;
+  --accent-ink: #ffc0b1;
+  --primary-ink: #321c18;
+  --focus: #ff9987;
+  --focus-shadow: #ff998733;
+  --warning-surface: #3a3024;
+  --warning-ink: #e8c695;
+  --error-surface: #41272b;
+  --error-ink: #ffb3aa;
+  --success-surface: #26352d;
+  --success-ink: #b8d8bf;
+  --peach: #4a302e;
+  --sage: #34332e;
+  --lavender: #38303e;
+  --sand: #3b332a;
+  }
+}

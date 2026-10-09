@@ -1,3 +1,11 @@
+for (const button of document.querySelectorAll('[data-theme-choice]')) {
+  const controller = window.PersonalBrandTheme;
+  if (!controller) continue;
+  button.setAttribute('aria-pressed', String(controller.preference === button.dataset.themeChoice));
+  button.addEventListener('click', () => controller.choose(button.dataset.themeChoice));
+  button.closest('[data-theme-control]').hidden = false;
+}
+
 const filterPanel = document.querySelector('[data-filters]');
 if (filterPanel) {
   const search = document.querySelector('#catalog-search');
